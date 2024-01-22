@@ -1,0 +1,5 @@
+Donuts, glazed, 000001, 7.99
+Cookies, chocolate chip, 000002, 5.99
+Chips, sour cream, 000003, 4.00
+Sprite, fizzy soda, 000004, 2.99
+Twizzlers, red tasty vines, 000005, 1.50
