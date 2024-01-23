@@ -48,5 +48,15 @@ public class Product {
         return name + ", " + description + ", " + ID + ", " + cost;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", ID='" + ID + '\'' +
+                ", cost=" + cost +
+                '}';
+
+    }
 }
 

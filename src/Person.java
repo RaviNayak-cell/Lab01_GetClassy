@@ -1,8 +1,7 @@
 import java.util.Calendar;
 import java.util.Date;
 import org.junit.Test;
-public class Person
-{
+public class Person {
     private String ID; // should never change sequence of digits
     private String firstName;
     private String lastName;
@@ -57,30 +56,36 @@ public class Person
         this.YOB = YOB;
     }
 
-    public String getFullName()
-    {
+    public String getFullName() {
         return this.firstName + " " + this.lastName;
     }
 
-    public String getFormalName()
-    {
+    public String getFormalName() {
         return this.title + " " + this.firstName + " " + this.lastName;
     }
 
-    public String toCSVDataRecord()
-    {
+    public String toCSVDataRecord() {
         return this.ID + ", " + this.firstName + ", " + this.lastName + ", " + this.title + ", " + this.YOB;
     }
 
-    public int getAge()
-    {
+    public int getAge() {
         int year = Calendar.getInstance().get(Calendar.YEAR);
         return (year - YOB);
     }
 
-    public int getAge(int year)
-    {
+    public int getAge(int year) {
         return (year - YOB);
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "ID='" + ID + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", title='" + title + '\'' +
+                ", YOB=" + YOB +
+                '}';
+
+    }
 }
